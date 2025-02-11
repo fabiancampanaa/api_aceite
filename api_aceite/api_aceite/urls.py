@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 from api import views
 from rest_framework import routers
@@ -25,7 +25,10 @@ router = routers.DefaultRouter()
 # En el router vamos añadiendo los endpoints a los viewsets
 router.register('busquedas', views.BusquedaViewSet)
 
+
 urlpatterns = [
   path('api/v1/', include(router.urls)),
   path('admin/', admin.site.urls),
+  re_path('login', views.login),
+  re_path('api/register', views.register),
 ]

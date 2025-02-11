@@ -14,8 +14,3 @@ class Busqueda(models.Model):
     fecha_extraccion = models.DateField()
     pagina_general = models.URLField()
 
-class Usuario(models.Model):
-    id = models.AutoField(primary_key=True)
-    nombre = models.CharField(max_length=150, blank = False, null= False)
-    email = models.EmailField(max_length=254, blank=False, null=False)
-    password = models.CharField(max_length= 20, blank= False, null= False)
