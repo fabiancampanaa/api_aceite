@@ -109,6 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'api.CustomUser'  # Reemplaza 'tu_app' con el nombre de tu aplicación
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
@@ -142,3 +144,4 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173"  # Cambia esto por la URL de tu frontend
 ]
+

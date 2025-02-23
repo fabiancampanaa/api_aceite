@@ -1,4 +1,4 @@
-from .models import Busqueda
+from .models import Busqueda, CustomUser
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -7,7 +7,7 @@ class BusquedaSerializer(serializers.ModelSerializer):
         model = Busqueda
         fields = '__all__'
 
-class UserSerializer(serializers.ModelSerializer):
+class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
-        fields = ['username', 'email', 'password']
+        model = CustomUser
+        fields = ['username', 'email', 'password', 'numero_telefono', 'nombre_empresa', 'tipo']
