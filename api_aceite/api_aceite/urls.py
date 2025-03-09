@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 
 from api import views
+
 from rest_framework import routers
 
 router = routers.DefaultRouter()
@@ -30,5 +31,5 @@ urlpatterns = [
   path('api/v1/', include(router.urls)),
   path('admin/', admin.site.urls),
   re_path('login', views.login),
-  re_path('api/register', views.register),
+  re_path('api/register', views.register)
 ]

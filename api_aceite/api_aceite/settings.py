@@ -117,6 +117,10 @@ AUTH_USER_MODEL = 'api.CustomUser'  # Reemplaza 'tu_app' con el nombre de tu apl
 
 LANGUAGE_CODE = 'en-us'
 
+from django.conf.locale.es import formats as es_formats
+
+es_formats.DATETIME_FORMAT = "d M Y H:i:s"
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True

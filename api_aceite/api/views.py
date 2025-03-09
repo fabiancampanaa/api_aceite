@@ -6,12 +6,15 @@ from rest_framework.response import Response
 from rest_framework import permissions, status
 from rest_framework.authtoken.models import Token
 from django.shortcuts import get_object_or_404
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 # Create your views here.
 
 class BusquedaViewSet(viewsets.ModelViewSet):
     queryset = Busqueda.objects.all()
     serializer_class = BusquedaSerializer
+
 
 
 @api_view(['POST'])
@@ -21,11 +24,12 @@ def login(request):
     print(request.data['password'])
     if not user.check_password(request.data['password']):
         return Response({"error":"Contraseña incorrecta"}, status=status.HTTP_400_BAD_REQUEST)
-
     token, created = Token.objects.get_or_create(user=user)
     serializer = CustomUserSerializer(instance=user)
 
     return Response({"token": token.key, "user": serializer.data}, status=status.HTTP_200_OK)
+
+
 
 @api_view(['POST'])
 @permission_classes((permissions.AllowAny,))

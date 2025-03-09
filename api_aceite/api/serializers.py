@@ -5,8 +5,8 @@ from rest_framework import serializers
 class BusquedaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Busqueda
-        fields = '__all__'
-
+        fields =  ['id_registro', 'id_producto', 'producto', 'marca', 'cantidad', 'unidad_medida', 'envase', 'valor', 'identificacion_url', 'url', 'fecha_extraccion', 'pagina_general']
+                   
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
