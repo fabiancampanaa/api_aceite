@@ -117,11 +117,7 @@ AUTH_USER_MODEL = 'api.CustomUser'  # Reemplaza 'tu_app' con el nombre de tu apl
 
 LANGUAGE_CODE = 'en-us'
 
-from django.conf.locale.es import formats as es_formats
-
-es_formats.DATETIME_FORMAT = "d M Y H:i:s"
-
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
@@ -146,6 +142,6 @@ REST_FRAMEWORK = {
 
 #CORS_ALLOW_ALL_ORIGINS = True  # Permite todas las conexiones (solo en desarrollo)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"  # Cambia esto por la URL de tu frontend
+    "http://localhost:5174"  # Cambia esto por la URL de tu frontend
 ]
 
