@@ -142,6 +142,7 @@ REST_FRAMEWORK = {
 
 #CORS_ALLOW_ALL_ORIGINS = True  # Permite todas las conexiones (solo en desarrollo)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5174"  # Cambia esto por la URL de tu frontend
+    "http://localhost:5174",
+      "http://localhost:5173"  # Cambia esto por la URL de tu frontend
 ]
 
