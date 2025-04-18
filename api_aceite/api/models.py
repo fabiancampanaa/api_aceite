@@ -35,3 +35,20 @@ class CustomUser(AbstractUser):
     def __str__(self):
         return self.username
 
+class BusquedaRrss(models.Model):
+    rrss = models.CharField(max_length=150)
+    marca = models.CharField(max_length=150)
+    nombre_usuario = models.CharField(max_length=150)
+    url_instagram = models.CharField(max_length=150)
+    seguidores = models.IntegerField()
+    cant_publicaciones = models.IntegerField()
+    orden = models.IntegerField()
+    publicacion = models.TextField()
+    tipo = models.CharField(max_length=150)
+    cant_me_gusta = models.IntegerField()
+    cant_comentarios = models.IntegerField()
+    fecha_subido = models.CharField(max_length=200)
+    fecha_ultima = models.DateField()
+    valoracion = models.CharField(max_length=150)
+    fecha_registro = models.DateField()
+    url = models.URLField()

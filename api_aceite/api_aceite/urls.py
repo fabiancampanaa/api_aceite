@@ -25,6 +25,7 @@ router = routers.DefaultRouter()
 
 # En el router vamos añadiendo los endpoints a los viewsets
 router.register('busquedas', views.BusquedaViewSet)
+router.register('busquedasrrss', views.BusquedaRrssViewSet)
 
 
 urlpatterns = [

@@ -1,5 +1,5 @@
-from .models import Busqueda, CustomUser
-from .serializers import BusquedaSerializer, CustomUserSerializer
+from .models import Busqueda, CustomUser, BusquedaRrss
+from .serializers import BusquedaSerializer, CustomUserSerializer, BusquedaRrssSerializer
 from rest_framework import viewsets
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
@@ -14,6 +14,10 @@ from rest_framework.views import APIView
 class BusquedaViewSet(viewsets.ModelViewSet):
     queryset = Busqueda.objects.all()
     serializer_class = BusquedaSerializer
+
+class BusquedaRrssViewSet(viewsets.ModelViewSet):
+    queryset = BusquedaRrss.objects.all()
+    serializer_class = BusquedaRrssSerializer
 
 
 
