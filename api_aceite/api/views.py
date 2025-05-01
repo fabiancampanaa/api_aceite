@@ -6,14 +6,13 @@ from rest_framework.response import Response
 from rest_framework import permissions, status
 from rest_framework.authtoken.models import Token
 from django.shortcuts import get_object_or_404
-from rest_framework.response import Response
 from rest_framework.views import APIView
-import pandas as pd
-from django.views import View
-from django.http import JsonResponse
 from django.utils.dateparse import parse_date
-from .models import Busqueda
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny
+from datetime import datetime
+import pandas as pd
+
 # Create your views here.
 
 class BusquedaViewSet(viewsets.ModelViewSet):
@@ -41,7 +40,7 @@ def login(request):
 
 
 @api_view(['POST'])
-@permission_classes((permissions.AllowAny,))
+@permission_classes([AllowAny])
 def register(request):
     print(request.data)
     serializer  = CustomUserSerializer(data=request.data)
@@ -66,23 +65,7 @@ def profile(request):
     print(request.data)
     return Response({})
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
-from rest_framework import status
-from django.utils.dateparse import parse_date
-from datetime import datetime
-import pandas as pd
-from .models import Busqueda
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
-from rest_framework import status
-from django.utils.dateparse import parse_date
-from datetime import datetime
-import pandas as pd
-from .models import Busqueda
 
 class CargarExcelBusquedaView(APIView):
     permission_classes = [IsAuthenticated]
@@ -135,6 +118,7 @@ class CargarExcelBusquedaView(APIView):
 
                 # Crear el objeto
                 Busqueda.objects.create(
+                    id_registro = row.get('id_registro'),
                     id_producto=row.get('id_producto'),
                     producto=row.get('producto'),
                     marca=row.get('marca'),

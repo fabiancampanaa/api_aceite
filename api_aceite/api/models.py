@@ -4,6 +4,7 @@ from django.utils.dateparse import parse_date
 from datetime import datetime
 
 class Busqueda(models.Model):
+    id_registro = models.IntegerField()
     id_producto = models.IntegerField()
     producto = models.CharField(max_length=150)
     marca = models.CharField(max_length=150)
@@ -18,15 +19,10 @@ class Busqueda(models.Model):
     pagina_general = models.URLField()
 
 
-
-
-
-
-
-
 class CustomUser(AbstractUser):
     numero_telefono = models.CharField(max_length=9, blank=True, null=True)
     tipo_usuario = models.CharField(max_length=20, default="basico")
+    tipo_acceso = models.CharField(max_length=20, default="general")
     groups = models.ManyToManyField(
         "auth.Group",
         related_name="custom_users",  # ← Evita el conflicto con User.groups
