@@ -23,6 +23,10 @@ class BusquedaRrssViewSet(viewsets.ModelViewSet):
     queryset = BusquedaRrss.objects.all()
     serializer_class = BusquedaRrssSerializer
 
+class UsuarioViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated]
+    queryset = CustomUser.objects.all()
+    serializer_class = CustomUserSerializer
 
 
 @api_view(['POST'])
