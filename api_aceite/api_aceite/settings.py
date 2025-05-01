@@ -135,14 +135,17 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-  'DEFAULT_PERMISSION_CLASSES': [                     
-    'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
-  ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
 }
 
 #CORS_ALLOW_ALL_ORIGINS = True  # Permite todas las conexiones (solo en desarrollo)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
-      "http://localhost:5173"  # Cambia esto por la URL de tu frontend
+      "http://localhost:5173"  
 ]
 

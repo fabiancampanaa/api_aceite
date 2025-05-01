@@ -10,7 +10,7 @@ class BusquedaSerializer(serializers.ModelSerializer):
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ['username', 'email', 'password', 'numero_telefono', 'nombre_empresa', 'tipo']
+        fields = ['username', 'email', 'password', 'numero_telefono', 'tipo_usuario']
 
 class BusquedaRrssSerializer(serializers.ModelSerializer):
     class Meta:

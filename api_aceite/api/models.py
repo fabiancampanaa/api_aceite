@@ -1,26 +1,32 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.utils.dateparse import parse_date
+from datetime import datetime
 
 class Busqueda(models.Model):
-    id_registro = models.IntegerField()
     id_producto = models.IntegerField()
     producto = models.CharField(max_length=150)
     marca = models.CharField(max_length=150)
-    cantidad = models.IntegerField()
-    unidad_medida = models.CharField(max_length=10)
+    cantidad = models.IntegerField()  # Puede estar en ml o L
+    unidad_medida = models.CharField(max_length=10)  # "ml" o "L"
     envase = models.CharField(max_length=150)
-    valor = models.IntegerField()
+    valor = models.DecimalField(max_digits=12, decimal_places=2)  # Precio total
+    precio_litro = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)  # Precio homologado
     identificacion_url = models.CharField(max_length=500)
     url = models.URLField()
     fecha_extraccion = models.DateField()
     pagina_general = models.URLField()
 
 
+
+
+
+
+
+
 class CustomUser(AbstractUser):
     numero_telefono = models.CharField(max_length=9, blank=True, null=True)
-    tipo = models.CharField(max_length=20, default="basico")
-    nombre_empresa = models.CharField(max_length=50, blank=True, null=True)
-
+    tipo_usuario = models.CharField(max_length=20, default="basico")
     groups = models.ManyToManyField(
         "auth.Group",
         related_name="custom_users",  # ← Evita el conflicto con User.groups
