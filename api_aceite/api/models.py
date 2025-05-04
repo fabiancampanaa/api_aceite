@@ -11,7 +11,7 @@ class Busqueda(models.Model):
     cantidad = models.IntegerField()  # Puede estar en ml o L
     unidad_medida = models.CharField(max_length=10)  # "ml" o "L"
     envase = models.CharField(max_length=150)
-    valor = models.DecimalField(max_digits=12, decimal_places=2)  # Precio total
+    valor = models.DecimalField(max_digits=12, decimal_places=0)  # Precio total
     precio_litro = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)  # Precio homologado
     identificacion_url = models.CharField(max_length=500)
     url = models.URLField()
