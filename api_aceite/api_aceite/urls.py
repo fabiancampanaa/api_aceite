@@ -33,7 +33,8 @@ urlpatterns = [
   path('api/v1/', include(router.urls)),
   path('admin/', admin.site.urls),
   
-  path('api/cargar-excel/', views.CargarExcelBusquedaView.as_view(), name='cargar_excel_busqueda'),
+  path('api/archivo1/', views.CargarExcelBusquedaView.as_view(), name='cargar_excel_busqueda'),
+   path('api/archivo2/', views.CargarExcelBusquedaRRSSView.as_view(), name='cargar_excel_rrss'),
   re_path('login', views.login),
   re_path('api/register', views.register)
 ]

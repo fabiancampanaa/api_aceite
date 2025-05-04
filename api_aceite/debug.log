@@ -1,0 +1,130 @@
+
+Fila 2: ['“44125” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 3: ['“44524” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 4: ['“44125” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 5: ['“45752” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 6: ['“45729” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 7: ['“45687” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 8: ['“45747” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 9: ['“45741” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 10: ['“45724” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 11: ['“45677” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 12: ['“45645” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 13: ['“45639” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 14: ['“45726” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 15: ['“45722” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 16: ['“45754” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 17: ['“45754” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 18: ['“45743” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 19: ['“45743” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 20: ['“45540” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 21: ['“45349” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 22: ['“45290” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 23: ['“45289” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 24: ['“45241” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 25: ['“44896” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 26: El campo 'nombre_usuario' no puede estar vacío
+Fila 27: El campo 'nombre_usuario' no puede estar vacío
+Fila 28: El campo 'nombre_usuario' no puede estar vacío
+Fila 29: El campo 'nombre_usuario' no puede estar vacío
+Fila 30: El campo 'nombre_usuario' no puede estar vacío
+Fila 31: ['“44125” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 32: ['“44524” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 33: ['“44125” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 34: ['“45762” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 35: ['“45757” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 36: ['“45752” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 37: ['“45762” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 38: ['“45747” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 39: ['“45741” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 40: ['“45724” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 41: ['“45677” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Fila 42: ['“45645” value has an invalid date format. It must be in YYYY-MM-DD format.']
+Proceso completado con errores. Creados: 0, Fallidos: 41
+Fila 26: El campo 'url_instagram' no puede estar vacío
+Fila 27: El campo 'url_instagram' no puede estar vacío
+Fila 28: El campo 'url_instagram' no puede estar vacío
+Fila 29: El campo 'url_instagram' no puede estar vacío
+Fila 30: El campo 'url_instagram' no puede estar vacío
+Proceso completado con errores. Creados: 36, Fallidos: 5
+Fila 26: NaTType does not support utcoffset
+Fila 27: NaTType does not support utcoffset
+Fila 28: NaTType does not support utcoffset
+Fila 29: NaTType does not support utcoffset
+Fila 30: NaTType does not support utcoffset
+Fila 31: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 32: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 33: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 34: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 35: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 36: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 37: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 38: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 39: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 40: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 41: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 42: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Proceso completado con errores. Creados: 24, Fallidos: 17
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Fila 26: NaTType does not support utcoffset
+Fila 27: NaTType does not support utcoffset
+Fila 28: NaTType does not support utcoffset
+Fila 29: NaTType does not support utcoffset
+Fila 30: NaTType does not support utcoffset
+Fila 31: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 32: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 33: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 34: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 35: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 36: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 37: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 38: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 39: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 40: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 41: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 42: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Proceso completado con errores. Creados: 24, Fallidos: 17
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fila 26: El campo 'fecha_subido' es requerido y no puede estar vacío
+Fila 27: El campo 'fecha_subido' es requerido y no puede estar vacío
+Fila 28: El campo 'fecha_subido' es requerido y no puede estar vacío
+Fila 29: El campo 'fecha_subido' es requerido y no puede estar vacío
+Fila 30: El campo 'fecha_subido' es requerido y no puede estar vacío
+Proceso completado con errores. Creados: 36, Fallidos: 5
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fila 26: (1048, "Column 'fecha_subido' cannot be null")
+Fila 27: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 28: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 29: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 30: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 31: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 32: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 33: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 34: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 35: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 36: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 37: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 38: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 39: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 40: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 41: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Fila 42: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+Proceso completado con errores. Creados: 24, Fallidos: 17
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Se crearon exitosamente 41 registros
+Se crearon exitosamente 41 registros
+C:\Users\fcamp\OneDrive\Escritorio\Proyecto aceite\Backend\api_aceite\api_aceite\api\models.py changed, reloading.
+Watching for file changes with StatReloader
