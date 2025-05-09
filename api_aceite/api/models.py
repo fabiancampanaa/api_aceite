@@ -22,7 +22,8 @@ class Busqueda(models.Model):
 class CustomUser(AbstractUser):
     numero_telefono = models.CharField(max_length=9, blank=True, null=True)
     tipo_usuario = models.CharField(max_length=20, default="basico")
-    tipo_acceso = models.CharField(max_length=20, default="general")
+    
+    tipo_acceso = models.CharField(max_length=20, default="General")
     groups = models.ManyToManyField(
         "auth.Group",
         related_name="custom_users",  # ← Evita el conflicto con User.groups

@@ -86,6 +86,7 @@ class CargarExcelBusquedaView(APIView):
         except Exception as e:
             return Response({'error': f'Error al leer el archivo Excel: {str(e)}'}, status=status.HTTP_400_BAD_REQUEST)
 
+        Busqueda.objects.all().delete()
         registros_creados = 0
         errores = []
 
@@ -148,7 +149,12 @@ class CargarExcelBusquedaView(APIView):
             'errores': errores
         }, status=status.HTTP_200_OK)
 
+
+
 logger = logging.getLogger(__name__)
+
+
+
 class CargarExcelBusquedaRRSSView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -169,6 +175,8 @@ class CargarExcelBusquedaRRSSView(APIView):
             )
 
         excel_file = request.FILES['archivo2']
+
+        
 
         # Validate file type
         if not excel_file.name.endswith(('.xlsx', '.xls')):
@@ -213,6 +221,7 @@ class CargarExcelBusquedaRRSSView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+        BusquedaRrss.objects.all().delete()
         registros_creados = 0
         errores = []
 
